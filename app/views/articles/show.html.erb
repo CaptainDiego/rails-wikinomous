@@ -1,4 +1,8 @@
 
-<h1><%= @article.title %></h1><%= link_to article_path(@article), method: :delete,data: { confirm: "Are you sure?" } do %><i class="far fa-trash-alt"></i>
+<h1><%= @article.title %></h1>
+    <%= link_to article_path(@article), method: :delete,data: { confirm: "Are you sure?" } do %><i class="far fa-trash-alt"></i>
+    <% end %>
+    <%= link_to edit_article_path, class: "btn btn-default" do %>
+    <i class="fas fa-edit"></i>
     <% end %>
 <h3><%= @article.content %></h3>
