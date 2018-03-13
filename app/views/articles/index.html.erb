@@ -1,0 +1,18 @@
+<h1>List of articles</h1>
+<br>
+<br>
+<% @articles.each do |a| %>
+<ul>
+  <li>
+    <h3>
+      <%= link_to a.title, article_path(a) %>
+    </h3>
+  </li>
+  <li>
+    <%= a.content %>
+  </li>
+</ul>
+<br>
+<% end %>
+
+

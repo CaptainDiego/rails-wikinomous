@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <title>RailsWikinomous</title>
     <%= csrf_meta_tags %>
 
@@ -9,6 +11,12 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <%= link_to "Wikinomous", articles_path %>
+      <%= link_to "Create an Article", new_article_path %>
+    </div>
+    <div class="html-body">
     <%= yield %>
+    </div>
   </body>
 </html>
